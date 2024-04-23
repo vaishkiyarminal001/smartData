@@ -9,6 +9,21 @@ public class Member {
 	private String	lastName;
 	private String	state;
 	private String	zip;
+	
+	
+	
+	
+
+	public Member(String id, String address, String city, String firstName, String lastName, String state, String zip) {
+		super();
+		this.id = id;
+		this.address = address;
+		this.city = city;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.state = state;
+		this.zip = zip;
+	}
 
 	public void setId( String id ) {
 		this.id = id;
@@ -66,10 +81,11 @@ public class Member {
 		this.zip = zip;
 	}
 
-	public String toCSVString( ) {
-		return "Member [id=" + id + ", address=" + address + ", city=" + city + ", firstName=" + firstName 
-		+ ", lastName=" + lastName + ", state=" + state + ", zip=" + zip"]";
+	public String toCSVString() {
+	    return "Member [id=" + id + ", address=" + address + ", city=" + city + ", firstName=" + firstName 
+	        + ", lastName=" + lastName + ", state=" + state + ", zip=" + zip;
 	}
+
 
 	@Override
     public String toString( ) {
